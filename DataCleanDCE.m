@@ -235,10 +235,10 @@ EstimOpt.NSdSim = 1e4; % number of draws for simulating standard deviations
 %% OptimOpt
 
 if isfield(EstimOpt, 'ConstVarActive') == 0 || EstimOpt.ConstVarActive == 0 % no contstaints on parameters
-    OptimOpt = optimoptions('fminunc');
+    OptimOpt = optimset('fminunc');
     OptimOpt.Algorithm = 'quasi-newton'; %'trust-region';
 elseif EstimOpt.ConstVarActive == 1 % there are some constraints on parameters
-    OptimOpt = optimoptions('fmincon');
+    OptimOpt = optimset('fmincon');
     OptimOpt.Algorithm = 'interior-point'; %'sqp'; 'active-set'; 'trust-region-reflective';
 end
 
@@ -276,7 +276,7 @@ INPUT_0.Y = INPUT.Y;
 INPUT_0.Xa = eye(EstimOpt.NAlt);
 INPUT_0.Xa = INPUT_0.Xa(:,1:end-1);
 INPUT_0.Xa = INPUT_0.Xa((1:size(INPUT_0.Xa,1))' * ones(1,EstimOpt.NP*EstimOpt.NCT), (1:size(INPUT_0.Xa,2))');
-INPUT_0.Xs = double.empty(size(INPUT_0.Y,1),0);
+INPUT_0.Xs = zeros(size(INPUT_0.Y,1), 0, 'double');
 INPUT_0.MissingInd = INPUT.MissingInd;
 INPUT_0.W = INPUT.W; %ones(EstimOpt.NP,1);
 EstimOpt_0 = EstimOpt;
@@ -288,7 +288,7 @@ EstimOpt_0.NVarS = 0;
 EstimOpt_0.OPTIM = 1;
 EstimOpt_0.Display = 0;
 EstimOpt_0.WTP_space = 0;
-OptimOpt_0 = optimoptions('fminunc');
+OptimOpt_0 = optimset('fminunc');
 OptimOpt_0.Algorithm = 'quasi-newton';
 OptimOpt_0.GradObj = 'off';
 OptimOpt_0.Hessian = 'off';

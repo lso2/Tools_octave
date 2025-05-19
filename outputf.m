@@ -5,6 +5,14 @@ persistent LL_backup IterTime
 % save tmp1
 
 stop = false;
+
+% Fix missing iteration field for Octave compatibility
+if ~isfield(optimvalues, 'iteration') && isfield(optimvalues, 'iter')
+    optimvalues.iteration = optimvalues.iter;
+elseif ~isfield(optimvalues, 'iteration')
+    optimvalues.iteration = NaN;
+end
+
 if isequal(state,'init')
     disp('')
 	fprintf('%6s %6s %8s %16s %17s %18s %17s %12s \n','Iter.','Eval.','dB','Step','f(x)','df(x)','Opt. Cond.','Iter. time');

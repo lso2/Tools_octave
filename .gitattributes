@@ -1,5 +1,5 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Disable CRLF normalization for .m files
+*.m -text
 
 # Custom for Visual Studio
 *.cs     diff=csharp

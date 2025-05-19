@@ -230,10 +230,10 @@ EstimOpt.Profile = 1;
 %% OptimOpt
 
 if isfield(EstimOpt, 'ConstVarActive') == 0 || EstimOpt.ConstVarActive == 0 % no contstaints on parameters
-    OptimOpt = optimoptions('fminunc');
+    OptimOpt = optimset('fminunc');
     OptimOpt.Algorithm = 'quasi-newton'; %'trust-region';
 elseif EstimOpt.ConstVarActive == 1 % there are some constraints on parameters
-    OptimOpt = optimoptions('fmincon');
+    OptimOpt = optimset('fmincon');
     OptimOpt.Algorithm = 'interior-point'; %'sqp'; 'active-set'; 'trust-region-reflective';
 end
 
@@ -285,7 +285,7 @@ EstimOpt_0.OPTIM = 1;
 EstimOpt_0.Display = 0;
 EstimOpt_0.WTP_space = 0;
 EstimOpt_0.ApproxHess = 1;
-OptimOpt_0 = optimoptions('fminunc');
+OptimOpt_0 = optimset('fminunc');
 OptimOpt_0.Algorithm = 'trust-region';
 OptimOpt_0.GradObj = 'on';
 OptimOpt_0.Hessian = 'off';
