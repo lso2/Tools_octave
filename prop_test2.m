@@ -1,4 +1,4 @@
-function [h,p,chi2stat,df] = prop_test2(X1,X2,varargin)
+﻿function [h,p,chi2stat,df] = prop_test2(X1,X2,varargin)
 
 % save tmp1
 

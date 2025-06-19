@@ -1,4 +1,4 @@
-function [lh, th] = bubbleplot(x, y, z, siz, col, shape, varargin)
+﻿function [lh, th] = bubbleplot(x, y, z, siz, col, shape, varargin)
 % BUBBLEPLOT produces a scatter plot that enables the visualization of upto 
 % 6-dimensional data. The dimensions used for displaying data include the 
 % X, Y and Z coordinates, the marker size, color and shape. 

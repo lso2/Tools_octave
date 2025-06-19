@@ -1,4 +1,4 @@
-function [OUTPUT]=MATLAB_Ordered_Probit_MLE(y,X,Optimiser_Settings);
+﻿function [OUTPUT]=MATLAB_Ordered_Probit_MLE(y,X,Optimiser_Settings);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 %   Author: Ian Gregory
 %

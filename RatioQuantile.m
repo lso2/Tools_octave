@@ -1,4 +1,4 @@
-function Y = RatioQuantile(m1,m2,s1,s2,r,cen)
+﻿function Y = RatioQuantile(m1,m2,s1,s2,r,cen)
 
 % Calculate percentile 'cen' of a ratio distribution X1/X2 where
 % (X1,X2)~BVN(m1,m2;s1,s2;r).

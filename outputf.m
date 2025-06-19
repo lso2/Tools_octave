@@ -1,4 +1,4 @@
-function stop = outputf(x,optimvalues,state)
+﻿function stop = outputf(x,optimvalues,state)
 global B_backup 
 persistent LL_backup IterTime
 

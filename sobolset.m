@@ -1,4 +1,4 @@
-classdef sobolset
+﻿classdef sobolset
     % Minimal wrapper for MATLAB's sobolset using stk_sampling_sobol (Octave)
     
     properties

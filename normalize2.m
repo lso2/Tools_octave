@@ -1,4 +1,4 @@
-function N = normalize(A,varargin)
+﻿function N = normalize(A,varargin)
 %NORMALIZE   Normalize data.
 %   N = NORMALIZE(A) normalizes data in A using the 'zscore' method, which 
 %   centers the data to have mean 0 and scales it to have standard 

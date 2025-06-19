@@ -1,4 +1,4 @@
-function star_array = star_sig_cell(P)
+﻿function star_array = star_sig_cell(P)
 
 star_array = cell(size(P));
     

@@ -1,4 +1,4 @@
-function LLV = MATLAB_Ordered_Probit_Likelihood(b,y,X,k)
+﻿function LLV = MATLAB_Ordered_Probit_Likelihood(b,y,X,k)
 %------------------------------------------------------------------------------------
 % Author        :       Ian Gregory
 % Date:         :       14th November 2009

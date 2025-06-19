@@ -1,4 +1,4 @@
-function ResultsOut = genOutput_LCMXL(EstimOpt, Results, Head, Tail, Names, Template1, Template2, Heads, ST)
+﻿function ResultsOut = genOutput_LCMXL(EstimOpt, Results, Head, Tail, Names, Template1, Template2, Heads, ST)
 
 if ~isfield(EstimOpt,'xlsOverwrite')
     EstimOpt.xlsOverwrite = 1;

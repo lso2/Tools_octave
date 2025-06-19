@@ -1,4 +1,4 @@
-function T = voung_test(LL1, LL2, p,q)
+﻿function T = voung_test(LL1, LL2, p,q)
 disp('Voung test for strictly non-nested models') 
 if nargin < 3
    disp('Assuming equal no. of parameters')

@@ -1,4 +1,4 @@
-function Test_MATLAB_Ordered_Probit_Estimate
+﻿function Test_MATLAB_Ordered_Probit_Estimate
 %------------------------------------------------------------------------------------
 %   Author: Ian Gregory
 %   Date:   25th January 2009

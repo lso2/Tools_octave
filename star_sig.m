@@ -1,4 +1,4 @@
-function star_array = star_sig(P)
+﻿function star_array = star_sig(P)
 
 star_array = [];
 for i = 1:length(P)

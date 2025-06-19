@@ -1,4 +1,4 @@
-function Ahat = nearestSPD(A)
+﻿function Ahat = nearestSPD(A)
 % nearestSPD - the nearest (in Frobenius norm) Symmetric Positive Definite matrix to A
 % usage: Ahat = nearestSPD(A)
 %

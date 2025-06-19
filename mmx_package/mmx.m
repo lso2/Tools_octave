@@ -1,4 +1,4 @@
-function fake_output = mmx(varargin)
+﻿function fake_output = mmx(varargin)
 %MMX - Multithreaded matrix operations on N-D matrices
 %    MMX treats an N-D matrix of double precision values as a set of pages 
 %    of 2D matrices, and performs various matrix operations on those pages.  

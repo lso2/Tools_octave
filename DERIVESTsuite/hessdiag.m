@@ -1,4 +1,4 @@
-function [HD,err,finaldelta] = hessdiag(fun,x0)
+﻿function [HD,err,finaldelta] = hessdiag(fun,x0)
 % HESSDIAG: diagonal elements of the Hessian matrix (vector of second partials)
 % usage: [HD,err,finaldelta] = hessdiag(fun,x0)
 %

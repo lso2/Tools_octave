@@ -1,4 +1,4 @@
-% RGB  Rgb triple for given CSS color name
+Ôªø% RGB  Rgb triple for given CSS color name
 %
 %   RGB = RGB('COLORNAME') returns the red-green-blue triple corresponding
 %     to the color named COLORNAME by the CSS3 proposed standard [1], which
@@ -28,7 +28,7 @@
 %
 %   ABOUT RGB
 %     This program is public domain and may be distributed freely.
-%     Author: Kristj·n JÛnasson, Dept. of Computer Science, University of
+%     Author: Kristj√°n J√≥nasson, Dept. of Computer Science, University of
 %     Iceland (jonasson@hi.is). June 2009.
 %
 %   REFERENCES

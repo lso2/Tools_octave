@@ -1,4 +1,4 @@
-function build_mmx(verbose)
+﻿function build_mmx(verbose)
 % BUILD_MMX - compiles mmx() for different platforms and provides help
 %            regarding compilation.
 %

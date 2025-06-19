@@ -1,4 +1,4 @@
-% Test routine for mtimesx, multi-dimensional speed and equality to MATLAB
+﻿% Test routine for mtimesx, multi-dimensional speed and equality to MATLAB
 %******************************************************************************
 % 
 %  MATLAB (R) is a trademark of The Mathworks (R) Corporation

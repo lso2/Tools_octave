@@ -1,4 +1,4 @@
-function der = numdiff(FUN, f, b0, central, BActive)
+﻿function der = numdiff(FUN, f, b0, central, BActive)
 
 % save res_numdiff
 % return

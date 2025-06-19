@@ -1,4 +1,4 @@
-function [a1,a2,a3,a4] = RatioFiellerBounds(B,VARB,varargin)
+﻿function [a1,a2,a3,a4] = RatioFiellerBounds(B,VARB,varargin)
 
 % Calculate 95% Fieller bounds of a ratio of X1/X2 where (X1,X2)~BVN(m1,m2;s1,s2;r)
 % in the following specification_cases:

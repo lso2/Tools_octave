@@ -1,4 +1,4 @@
-function new_direc = direcXpnd(direc, bactive)
+﻿function new_direc = direcXpnd(direc, bactive)
 
 % direc is K-no.of constranted parameters by 1 parameters
 % bactive is 1 by K vector

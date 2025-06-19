@@ -1,4 +1,4 @@
-% mtimesx_build compiles mtimesx.c with BLAS libraries
+﻿% mtimesx_build compiles mtimesx.c with BLAS libraries
 %******************************************************************************
 % 
 %  MATLAB (R) is a trademark of The Mathworks (R) Corporation

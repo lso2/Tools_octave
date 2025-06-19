@@ -1,4 +1,4 @@
-function desctiptive_stats = stats(input,mode)
+﻿function desctiptive_stats = stats(input,mode)
 
 if nargin < 2 || isempty(mode) || (mode ~=  0 && mode ~= 1) % no mode specified
     mode = 0;

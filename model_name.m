@@ -1,4 +1,4 @@
-function model = model_name(x)
+﻿function model = model_name(x)
 
     switch x 
         case 0

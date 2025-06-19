@@ -1,4 +1,4 @@
-function R2 = R2_hybrid(Y,Xa,X_str,Xc,Xm,Xs,MissingInd,err_sliced,EstimOpt,B,type)
+锘縡unction R2 = R2_hybrid(Y,Xa,X_str,Xc,Xm,Xs,MissingInd,err_sliced,EstimOpt,B,type)
 
 NP = EstimOpt.NP;
 NRep = EstimOpt.NRep;
@@ -18,11 +18,11 @@ if type == 0 || type == 2
 end
 
 if type == 0 % HMNL
-    ba = B(1:NVarA); % b atrybut體
+    ba = B(1:NVarA); % b atrybut贸w
     bm = reshape(B(NVarA+1:NVarA*(1+NVarM)),[NVarA,NVarM]);
     bl = reshape(B(NVarA*(1+NVarM)+1:NVarA*(NLatent+NVarM+1)),[NVarA,NLatent]); % b interakcji z LV
-    bs = B(NVarA*(NLatent+NVarM+1)+1:NVarA*(NLatent+NVarM+1)+NVarS); % b r體nania struktury
-    bstr = reshape(B(NVarA*(NLatent+NVarM+1)+NVarS+1:(NVarA+NVarStr)*NLatent+NVarA*(1+NVarM)+NVarS),[NVarStr,NLatent]); % b r體nania struktury
+    bs = B(NVarA*(NLatent+NVarM+1)+1:NVarA*(NLatent+NVarM+1)+NVarS); % b r贸wnania struktury
+    bstr = reshape(B(NVarA*(NLatent+NVarM+1)+NVarS+1:(NVarA+NVarStr)*NLatent+NVarA*(1+NVarM)+NVarS),[NVarStr,NLatent]); % b r贸wnania struktury
 
     if ScaleLV == 1
         bsLV = bs(NVarS-NLatent+1:end)';
@@ -158,24 +158,24 @@ elseif type == 1 % HLC
 elseif type == 2 % HMXL
     
     if EstimOpt.FullCov == 0
-        ba = B(1:NVarA); % b atrybut體
+        ba = B(1:NVarA); % b atrybut贸w
         bv = B(NVarA+1:2*NVarA);
         VC = diag(bv);
         bm = reshape(B(2*NVarA+1:NVarA*(NVarM+2)),[NVarA,NVarM]); % b mean covariates
         bl = reshape(B((2+NVarM)*NVarA+1:NVarA*(NLatent+2+NVarM)),[NVarA,NLatent]); % b interakcji z LV
         bs = B(NVarA*(NLatent+NVarM+2)+1:NVarA*(NLatent+NVarM+2)+NVarS); % b scale
-        bstr = reshape(B(NVarA*(NLatent+2+NVarM)+NVarS+1:(NVarA+NVarStr)*NLatent+(2+NVarM)*NVarA+NVarS),[NVarStr,NLatent]); % b r體nania struktury
-        %bstr = reshape(B(EstimOpt.NVarA*(EstimOpt.NLatent+2+EstimOpt.NVarM)+1:(EstimOpt.NVarA+EstimOpt.NVarStr)*EstimOpt.NLatent+(2+EstimOpt.NVarM)*EstimOpt.NVarA), EstimOpt.NVarStr, EstimOpt.NLatent); % b r體nania struktury
+        bstr = reshape(B(NVarA*(NLatent+2+NVarM)+NVarS+1:(NVarA+NVarStr)*NLatent+(2+NVarM)*NVarA+NVarS),[NVarStr,NLatent]); % b r贸wnania struktury
+        %bstr = reshape(B(EstimOpt.NVarA*(EstimOpt.NLatent+2+EstimOpt.NVarM)+1:(EstimOpt.NVarA+EstimOpt.NVarStr)*EstimOpt.NLatent+(2+EstimOpt.NVarM)*EstimOpt.NVarA), EstimOpt.NVarStr, EstimOpt.NLatent); % b r贸wnania struktury
     else
-        ba = B(1:NVarA); % b atrybut體
+        ba = B(1:NVarA); % b atrybut贸w
         bv = B(NVarA+1:NVarA+sum(1:NVarA,2));
         VC = tril(ones(NVarA));
         VC(VC == 1) = bv;
         bm = reshape(B(NVarA+sum(1:NVarA,2)+1:NVarA*(NVarM+1)+sum(1:NVarA,2)),[NVarA,NVarM]); % b mean covariates
         bl = reshape(B(NVarA*(1+NVarM)+sum(1:NVarA,2)+1:NVarA*(NLatent+1+NVarM)+sum(1:NVarA,2)),[NVarA,NLatent]); % b interakcji z LV
         bs = B(NVarA*(NLatent+1+NVarM)+sum(1:NVarA,2)+1:NVarA*(NLatent+1+NVarM)+sum(1:NVarA,2)+NVarS); % b scale
-        bstr = reshape(B(NVarA*(NLatent+NVarM+1)+sum(1:NVarA,2)+NVarS+1:(NVarA+NVarStr)*NLatent+NVarA*(1+NVarM)+sum(1:NVarA,2)+NVarS),NVarStr,NLatent); % b r體nania struktury
-        %bstr = reshape(B(EstimOpt.NVarA*(EstimOpt.NLatent++EstimOpt.NVarM+1)+sum(1EstimOpt.NVarA,2)+1:(EstimOpt.NVarA+EstimOpt.NVarStr)*EstimOpt.NLatent+EstimOpt.NVarA*(1+EstimOpt.NVarM)+sum(1:EstimOpt.NVarA,2)), EstimOpt.NVarStr, EstimOpt.NLatent); % b r體nania struktury
+        bstr = reshape(B(NVarA*(NLatent+NVarM+1)+sum(1:NVarA,2)+NVarS+1:(NVarA+NVarStr)*NLatent+NVarA*(1+NVarM)+sum(1:NVarA,2)+NVarS),NVarStr,NLatent); % b r贸wnania struktury
+        %bstr = reshape(B(EstimOpt.NVarA*(EstimOpt.NLatent++EstimOpt.NVarM+1)+sum(1EstimOpt.NVarA,2)+1:(EstimOpt.NVarA+EstimOpt.NVarStr)*EstimOpt.NLatent+EstimOpt.NVarA*(1+EstimOpt.NVarM)+sum(1:EstimOpt.NVarA,2)), EstimOpt.NVarStr, EstimOpt.NLatent); % b r贸wnania struktury
     end
     if ScaleLV == 1
        bsLV = bs(NVarS-NLatent+1:end)';

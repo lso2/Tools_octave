@@ -1,4 +1,4 @@
-function [grad,err,finaldelta] = gradest(fun,x0)
+﻿function [grad,err,finaldelta] = gradest(fun,x0)
 % gradest: estimate of the gradient vector of an analytical function of n variables
 % usage: [grad,err,finaldelta] = gradest(fun,x0)
 %

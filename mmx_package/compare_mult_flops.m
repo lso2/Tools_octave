@@ -1,4 +1,4 @@
-%% === compare timings for MULT
+﻿%% === compare timings for MULT
 
 choice = questdlg('Run full comparison (several minutes)?', ...
  'Performace Comparison', 'Yes','No','Yes');

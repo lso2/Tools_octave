@@ -1,4 +1,4 @@
-% Multivariate calculus demo script
+﻿% Multivariate calculus demo script
 
 % This script file is designed to be used in cell mode
 % from the matlab editor, or best of all, use the publish

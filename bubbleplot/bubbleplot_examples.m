@@ -1,4 +1,4 @@
-%% Bubbleplot visualization of multi-dimensional data
+﻿%% Bubbleplot visualization of multi-dimensional data
 % bubbleplot creates 2D and 3D scatter plots of multivariate data. Up to 7
 % dimensions of data can be visualized by using marker color, shape, size
 % and text annotations to convey information about the data. Continuous and

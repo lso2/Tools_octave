@@ -1,4 +1,4 @@
-% mtimesx_sparse does sparse matrix multiply of two inputs
+﻿% mtimesx_sparse does sparse matrix multiply of two inputs
 %******************************************************************************
 % 
 %  MATLAB (R) is a trademark of The Mathworks (R) Corporation

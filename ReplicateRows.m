@@ -1,4 +1,4 @@
-function Y = ReplicateRows(X,no,varargin)
+﻿function Y = ReplicateRows(X,no,varargin)
 
 % Y = ReplicateRows(X,no,varargin)
 % only tested for 2D matrices 

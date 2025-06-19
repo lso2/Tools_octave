@@ -1,4 +1,4 @@
-function obj = playFile(myfile);
+﻿function obj = playFile(myfile);
    load(myfile);
    
    obj = audioplayer(y, Fs);

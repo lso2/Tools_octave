@@ -1,4 +1,4 @@
-function b = ByteSize(theVariable, returnType, fid)
+﻿function b = ByteSize(theVariable, returnType, fid)
 % getByteSize returns the mem.usage of the provided variable(theVariable) to the given file identifier. 
 % returnType is assigned meaningfully according to the byte size if not stated
 % Output is written to screen if fid is 1, empty or not provided.

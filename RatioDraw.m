@@ -1,4 +1,4 @@
-function Y = RatioDraw(m1,m2,s1,s2,r,z1,z2)
+﻿function Y = RatioDraw(m1,m2,s1,s2,r,z1,z2)
 
 % Draw empirical ratio distribution of X1, X2, s1, s2, r, on [z1 z2]
 

@@ -1,4 +1,4 @@
-% Calls to icdf will use this wrapper, for octave compatibility
+﻿% Calls to icdf will use this wrapper, for octave compatibility
 function varargout = icdf(distname, p, varargin)
   % Wrapper for icdf to make sure that P is numeric
   if ~isnumeric(p)

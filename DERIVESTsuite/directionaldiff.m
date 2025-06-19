@@ -1,4 +1,4 @@
-function [dd,err,finaldelta] = directionaldiff(fun,x0,vec)
+﻿function [dd,err,finaldelta] = directionaldiff(fun,x0,vec)
 % directionaldiff: estimate of the directional derivative of a function of n variables
 % usage: [grad,err,finaldelta] = directionaldiff(fun,x0,vec)
 %

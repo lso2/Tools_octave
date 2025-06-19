@@ -1,4 +1,4 @@
-function MAT = matInt(X,I)
+﻿function MAT = matInt(X,I)
 
 if iscell(X) && iscell(I) % this is not thorougly tested, especially for size(X,1) > 1
     for i = 1:size(X,2)

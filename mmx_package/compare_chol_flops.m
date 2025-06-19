@@ -1,4 +1,4 @@
-
+﻿
 %% === compare timings for CHOL
 
 R  = 20;    % number of repeats (to increase accuracy)

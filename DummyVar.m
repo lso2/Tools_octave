@@ -1,4 +1,4 @@
-function D = dummyvar(group,varargin)
+﻿function D = dummyvar(group,varargin)
 %DUMMYVAR Dummy variable coding.
 %   X=DUMMYVAR(GROUP) returns a matrix X containing zeros and ones, whose
 %   columns are dummy variables for the grouping variable GROUP.  GROUP can be

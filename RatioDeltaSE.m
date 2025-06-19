@@ -1,4 +1,4 @@
-function f = RatioDeltaSE(B,VARB,varargin)
+﻿function f = RatioDeltaSE(B,VARB,varargin)
 
 % Calculate s.e. of the ratio using the delta method in the following specification_cases:
 %   0 - coefficients enter linearly

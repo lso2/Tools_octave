@@ -1,4 +1,4 @@
-function [hess,err] = hessian(fun,x0)
+﻿function [hess,err] = hessian(fun,x0)
 % hessian: estimate elements of the Hessian matrix (array of 2nd partials)
 % usage: [hess,err] = hessian(fun,x0)
 %

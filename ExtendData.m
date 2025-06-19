@@ -1,4 +1,4 @@
-function output_matrix = ExtendData(input_matrix,resp_id_idx)
+﻿function output_matrix = ExtendData(input_matrix,resp_id_idx)
 
 % Restructure dataset so that each respondent has equal number of rows (choices * alternatives), as required by the DCE package
 

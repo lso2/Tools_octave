@@ -1,4 +1,4 @@
-% Test routine for mtimesx, op(single) * op(single) equality vs MATLAB
+﻿% Test routine for mtimesx, op(single) * op(single) equality vs MATLAB
 %******************************************************************************
 %
 %  MATLAB (R) is a trademark of The Mathworks (R) Corporation

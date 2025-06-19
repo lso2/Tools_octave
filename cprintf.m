@@ -1,4 +1,4 @@
-function count = cprintf(style,format,varargin) %#ok<*JAPIMATHWORKS>
+﻿function count = cprintf(style,format,varargin) %#ok<*JAPIMATHWORKS>
 % CPRINTF displays styled formatted text in the Command Window
 %
 % Syntax:
@@ -102,7 +102,7 @@ function count = cprintf(style,format,varargin) %#ok<*JAPIMATHWORKS>
 %
 % Change log:
 %    2009-05-13: First version posted on <a href="http://www.mathworks.com/matlabcentral/fileexchange/authors/27420">MathWorks File Exchange</a>
-%    2009-05-28: corrected nargout behavior suggested by Andreas Gäb
+%    2009-05-28: corrected nargout behavior suggested by Andreas GÃ¤b
 %    2009-09-28: Fixed edge-case problem reported by Swagat K
 %    2010-06-27: Fix for R2010a/b; fixed edge case reported by Sharron; CPRINTF with no args runs the demo
 %    2011-03-04: Performance improvement
@@ -355,7 +355,7 @@ function [underlineFlag,boldFlag,style,debugFlag] = processStyleInfo(style)
   elseif ~ischar(style)
       error('YMA:cprintf:InvalidStyle','Invalid style - see help section for a list of valid style values')
 
-  % #RGB in hex mode (suggested by Andres Tönnesmann 26/3/21 https://mail.google.com/mail/u/0/#inbox/FMfcgxwLtGlbzftbfKJwWLNZKpSqzHhR)
+  % #RGB in hex mode (suggested by Andres TÃ¶nnesmann 26/3/21 https://mail.google.com/mail/u/0/#inbox/FMfcgxwLtGlbzftbfKJwWLNZKpSqzHhR)
   elseif style(1) == '#'
       hexCode = style(2:min(end,7));
       if length(hexCode)==3, hexCode = reshape([hexCode;hexCode],1,[]); end  % #a5f -> #aa55ff

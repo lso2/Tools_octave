@@ -1,4 +1,4 @@
-function [w,mw] = CellColumnWidth(X)
+﻿function [w,mw] = CellColumnWidth(X)
 
 CellNumTrue = cellfun(@(x) isnumeric(x), X);
 X(CellNumTrue) = cellfun(@(x) num2str(floor(x)),X(CellNumTrue),'UniformOutput',0);

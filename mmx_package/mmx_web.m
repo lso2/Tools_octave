@@ -1,4 +1,4 @@
-%% MMX - Multithreaded matrix operations on N-D matrices
+﻿%% MMX - Multithreaded matrix operations on N-D matrices
 % mmx treats an N-D matrix of double precision values as a set of pages 
 % of 2D matrices, and performs various matrix operations on those pages.  
 % mmx uses multithreading over the higher dimensions to achieve good

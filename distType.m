@@ -1,4 +1,4 @@
-function distribution = distType(input, fixed, input_length, type)
+﻿function distribution = distType(input, fixed, input_length, type)
 
 if nargin == 4 && strcmp(type,'lml')
     distribution = cell(length(input),1);

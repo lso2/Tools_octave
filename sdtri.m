@@ -1,4 +1,4 @@
-function C = sdtri(B1, VARB1, EstimOpt)
+﻿function C = sdtri(B1, VARB1, EstimOpt)
 
 m1 = length(B1);
 [m2,m3] = size(VARB1);
